@@ -1,0 +1,11 @@
+{
+"version": 3,
+"mappings": "AAAA,IAAK;EACD,UAAU,EAAE,KAAK",
+"sources": ["../../node_modules/bs-recipes/recipes/gulp.pug/app/scss/main.scss"],
+"names": [],
+"file": "main.css"
+}0BAA0B,EAAE,sCAAwC;IACpE,SAAS,EAAE,wBAAwB;EAGvC,GAAI;IACA,SAAS,EAAE,uBAAqB;AAIxC,OAAQ;EACJ,cAAc,EAAE,MAAM;EACtB,gBAAgB,EAAE,aAAa",
+"sources": ["../../node_modules/bs-recipes/recipes/grunt.sass.autoprefixer/app/scss/main.scss"],
+"names": [],
+"file": "main.css"
+}

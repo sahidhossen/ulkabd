@@ -1,0 +1,264 @@
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600);
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+//Animate scss
+@import "animate";
+
+ //Web Elements
+@import "elements";
+
+/*
+======================
+LOGIN PAGE
+======================
+*/
+.authentication {
+    background-image: linear-gradient(-35deg, #1BB39A 20%, #1bcdb4 70%, #20e6c8 85%);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    overflow-x: auto;
+    .panel-heading{
+        border-bottom: none;
+        color: $header-text-color;
+        font-size: 280%;
+        font-weight: bold;
+        text-align: center;
+    }
+    .panel-body{
+        padding-bottom: 30px;
+    }
+    .form{
+        .btn{
+            margin-top:15px;
+            margin-bottom: 15px;
+            float: left;
+
+        }
+    }
+
+    .margin-padding-0 {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .panel-bg{
+        background:transparent;
+        width:680px;
+        margin:0 auto;
+        margin-top: 20%;
+        margin-bottom: 20%;
+        border-radius: 5px;
+        overflow: hidden;
+        display: table;
+        position: relative;
+        &:after,&:before {
+          content: '';
+          display: table;
+        }
+      &:after {
+        clear: both;
+      }
+    }
+    .left-panel{
+      position: relative;
+      display: table-cell;
+      vertical-align: middle;
+      background: #FFFFFF;
+      width:40%;
+        .top-image {
+          text-align: center;
+            img{
+                height: 50px;
+            }
+        }
+        .bottom-image{
+          position: absolute;
+          width:200px;
+          height: 200px;
+          right:0;
+          bottom:0;
+            img{
+              height: 117px;
+              position: absolute;
+              bottom: 0;
+              right: 0;
+            }
+        }
+    }
+    .right-panel{
+      background: #f8f4f4;
+      color: #9c9c9c;
+      font-size: 14px;
+      width:60%;
+      vertical-align: top;
+      display: table-cell;
+      .login-title {
+        color: #ff5353;
+        font-size: 40px;
+        padding-top: 30px;
+      }
+      .login-description {
+        padding-bottom: 20px;
+      }
+      .btn-login {
+        background: #ff5353;
+        color: #FFFFFF;
+        margin-top: 25px;
+      }
+      & a{
+        color: #ff5353;
+      }
+      .forgot-pass {
+        color: #9c9c9c;
+      }
+      .sing-title {
+        padding-bottom: 20px;
+        padding-top: 3px;
+      }
+    }
+
+    .form-control{
+        color: #000000 !important;
+        font-size: 16px;
+        border: none;
+        height: 45px;
+        padding-left: 5px;
+        border-bottom: 1px solid #CCC;
+        margin-bottom: 10px;
+        outline: none;
+        background: transparent;
+        -webkit-box-shadow: none !important;
+        -moz-box-shadow: none !important;
+        box-shadow: none !important;
+    }
+    .form-control:focus{
+        border-radius: 0px;
+        border-bottom: 1px solid #FC563B;
+        margin-bottom: 10px;
+        color: #FC563B;
+        outline: none;
+        -webkit-box-shadow: none !important;
+        -moz-box-shadow: none !important;
+        box-shadow: none !important;
+    }
+    .btn-orange{
+        background-color: #FC563B;
+        border-radius: 0px;
+        margin: 5px;
+        padding: 5px;
+        width: 150px;
+        font-size: 20px;
+        font-weight: inherit;
+    }
+
+}
+
+.image-upload{
+  .image-upload-title {
+    color: $brand-primary;
+  }
+  .dropzone {
+    border: none;
+    height: auto;
+    padding: 0px;
+    .dz-preview {
+      .dz-image{
+        border-radius: 5px;
+        border: 1px solid #000;
+      }
+    }
+  }
+  .drop-file-here {
+    text-align: center;
+    padding-top: 15px;
+    .drag-drop-title{
+          font-size: 18px;
+          color: $brand-primary;
+          padding-top: 20px;
+          padding-bottom: 5px;
+    }
+    .image-upload-formet-note {
+      padding-top: 10px;
+      font-size: 12px;
+    }
+    .btn-primary {
+      border-radius: 6px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+  }
+  .total-image-count-title {
+    strong {
+      font-size: 12px;
+      color: #000;
+      padding-left: 5px;
+    }
+  }
+}
+
+#rejected_image_list {
+  position: relative;
+  display: none;
+  .removeAll {
+    position: absolute;
+    right:15px;
+    top:10px;
+    color: $brand-primary;
+    font-size:11px;
+    display: inline-block;
+    cursor: pointer;
+  }
+  .image_list {
+    ul {
+      margin:0;
+      padding:0;
+      list-style: none;
+      width:100%;
+        li {
+          display: inline-block;
+          vertical-align: middle;
+          position: relative;
+            img {
+              display: inline-block;
+              width:80px;
+              vertical-align: middle;
+              margin-right:5px;
+            }
+            .error-message{
+              display: inline-block;
+              width:224px;
+
+              color: $brand-danger;
+              vertical-align: middle;
+                p {
+                  margin:0;
+                  font-size: 11px;
+                }
+            }
+        }
+    }
+  }
+}
+
+
+//Web admin
+@import "admin.scss";
+@import "category.scss";
+@import "ulka_modal.scss";
+@import "alert";
+@import "campaign";
+@import "admin_responsive.scss";

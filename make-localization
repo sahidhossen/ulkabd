@@ -1,0 +1,115 @@
+#!/usr/bin/env node
+
+/**
+ * Inputs to provide
+ * 1. Input directory: String
+ * 2. Output directory: String
+ * 3. Input languages: Array
+ * 
+ * Should maintain
+ * 1. Input file names should be this pattern: [Input language].json
+ *      EX: en.json | ja.json | bn.json
+ */
+
+/**
+ * This is user input. User only inputs here.
+ */
+const userInput = {
+    inputDirectory: './resources/assets/js/locales/', // Provide input directory here
+    outputDirectory: './resources/lang/', // Provide output directory here
+    languages: ['en', 'ja', 'bn'] // Provide language names here
+};
+
+
+
+/**
+ * Below code has no interaction with user
+ */
+const fs = require('fs');
+
+const languageObjects = {};
+
+if ( fs.existsSync(userInput.inputDirectory) ) {
+    userInput.languages.forEach(language => {
+        if ( fs.existsSync( `${userInput.inputDirectory}${language}.json` ) ) {
+            languageObjects[language] = fs.readFileSync( `${userInput.inputDirectory}${language}.json`, 'utf8' );
+        }
+    });
+}
+
+Object.keys( languageObjects ).forEach(language => {
+    languageObjects[language] = generateOutputJsonFile( languageObjects[language] );
+});
+
+// If output directory does not exist
+if ( !fs.existsSync( userInput.outputDirectory ) ) {
+    // Create output directory
+    fs.mkdirSync( userInput.outputDirectory );
+}
+
+Object.keys( languageObjects ).forEach(language => {
+    // Put output files
+    fs.writeFileSync( `${userInput.outputDirectory}${language}.json`, languageObjects[language], 'utf8' ); 
+});
+
+function generateOutputJsonFile( json ) {
+    if ( json ) {
+        try {
+            if ( Object.keys( JSON.parse( json ) ).length === 0 ) {
+                return JSON.stringify( {} );
+            } else {
+                return JSON.stringify( makeOutputObject( JSON.parse( json ) ) );
+            }
+        } catch( error ) {
+            console.debug('Please provide valid JSON');
+        }
+    } else {
+        return JSON.stringify( {} );
+    }
+}
+
+function makeOutputObject( json ) {
+
+    const outputObject = {};
+    const objectKeys = [];
+    
+    function traverseObject ( object ) {
+    
+        const keys = Object.keys( object );
+
+        keys.forEach(key => {
+
+            if ( typeof object[key] === 'string' || typeof object[key] === 'object' && ( Object.keys( object[key] ).length > 0 ) ) {
+
+                objectKeys.push( key );
+
+                if ( typeof object[key] === 'string' ) {
+                    const openingCurlyRegex = /{{[\s]?/g; // Matches two opening curlybraces even followed by space
+                    const endingCurlyRegex = /}}/g; // Matches two ending curlybraces
+
+                    if(object[key].match(openingCurlyRegex)) {
+                        object[key] = object[key].replace(openingCurlyRegex, ':');
+                        object[key] = object[key].replace(endingCurlyRegex, '');
+                    }
+
+                    outputObject[objectKeys.join( '.' )] = object[key];
+        
+                    objectKeys.pop();
+                }
+                else if ( typeof object[key] === 'object' && ( Object.keys( object[key] ).length > 0 ) ) {
+                    traverseObject( object[key] );
+                }
+            }
+
+            // If this is the last key, remove it
+            if(keys[keys.length - 1] === key) {
+                objectKeys.pop();
+            }
+
+        });
+    };
+
+    traverseObject( json );
+
+    return outputObject;
+}

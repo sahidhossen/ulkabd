@@ -1,0 +1,766 @@
+{
+  "common": {
+    "sidebar": {
+      "dashboard": {
+        "navTitle": "Dashboard",
+        "subMenu": {
+          "orders": "オーダー"
+        }
+      },
+      "ai": {
+        "navTitle": "Artificial Intelligence",
+        "subMenus": {
+          "intent": "フローチャート",
+          "entities": "Entities",
+          "image": "画像をアップロード"
+        }
+      },
+      "manage": {
+        "navTitle": "Manage",
+        "subMenus": {
+          "configure": "設定",
+          "broadcast": "Broadcast",
+          "fb": "Facebook連携",
+          "web_connect": "Web連携"
+        }
+      }
+    },
+    "navbar": {
+      "links": {
+        "login": "ログイン"
+      },
+      "dropdown": {
+        "menus": {
+          "profile": "プロフィール",
+          "logout": "ログアウト"
+        }
+      }
+    },
+    "tableOptions": {
+      "prevText": "前へ",
+      "nextText": "次へ",
+      "loadingText": "Loading...",
+      "noDataText": "No rows found",
+      "pageText": "ページ",
+      "ofText": "of",
+      "rowsText": "列"
+    },
+    "buttons": {
+      "trainAgent": "チャットボット更新",
+      "messenger": "Messengerを確認",
+      "cancel": "キャンセル",
+      "create": "作成",
+      "submit": "決定",
+      "send": "送信",
+      "edit": "編集",
+      "delete": "削除",
+      "save": "保存"
+    }
+  },
+  "components": {},
+  "pages": {
+    "productCreate": {
+      "widget": {
+        "title": "Create Entity",
+        "productName": {
+          "placeholder": "Entity name"
+        }
+      },
+      "entity": {
+        "subtitle": "Entity details",
+        "form": {
+          "code": {
+            "label": "Code",
+            "placeholder": "Entity code"
+          },
+          "detail": {
+            "label": "Details",
+            "placeholder": "Entity details"
+          },
+          "price": {
+            "label": "Price",
+            "placeholder": "Entity price"
+          },
+          "offerPrice": {
+            "label": "Offer price",
+            "placeholder": "Entity offer price"
+          },
+          "stock": {
+            "label": "Stock",
+            "placeholder": "Number of entities"
+          },
+          "priority": {
+            "label": "Priority",
+            "rate": "Rate"
+          },
+          "unit": {
+            "label": "Unit",
+            "placeholder": "Entity unit"
+          },
+          "web": {
+            "label": "Web URL",
+            "placeholder": "https://"
+          }
+        }
+      },
+
+      "image": {
+        "subtitle": "写真を追加",
+        "form": {
+          "remove": "写真を削除",
+          "link": {
+            "label": "Or, Image link",
+            "placeholder": "Image link"
+          }
+        }
+      },
+
+      "intent": {
+        "subtitle": "Select intent",
+        "form": {
+          "label": "Intent",
+          "optionValue": "Select intent"
+        }
+      },
+
+      "attribute": {
+        "subtitle": "Entity attributes",
+        "form": {
+          "label": "Attribute name",
+          "placeholder": "Place holder"
+        }
+      }
+    },
+
+    "productUpdate": {
+      "widget": {
+        "title": "Update Entity",
+        "buttons": {
+          "post": "Post on Facebook",
+          "remove": "Remove from Facebook",
+          "create": "Create New"
+        },
+        "productName": {
+          "placeholder": "Entity name"
+        }
+      },
+      "entity": {
+        "subtitle": "Entity details",
+        "form": {
+          "code": {
+            "label": "Code",
+            "placeholder": "Entity code "
+          },
+          "detail": {
+            "label": "詳細"
+          },
+          "price": {
+            "label": "金額",
+            "placeholder": "金額"
+          },
+          "offerPrice": {
+            "label": "セール価格",
+            "placeholder": "セール価格"
+          },
+          "stock": {
+            "label": "在庫",
+            "placeholder": "商品数"
+          },
+          "rating": {
+            "label": "Rating",
+            "rate": "Rate"
+          },
+          "unit": {
+            "label": "Units",
+            "placeholder": "Units"
+          },
+          "web": {
+            "label": "Web URL",
+            "placeholder": "http://"
+          }
+        }
+      },
+
+      "intent": {
+        "subtitle": "Select intent",
+        "form": {
+          "label": "Intent",
+          "optionValue": "Select intent"
+        }
+      },
+
+      "attribute": {
+        "subtitle": "Entity attributes"
+      },
+      "image": {
+        "subtitle": "Add image",
+        "form": {
+          "remove": "Remove image",
+          "link": {
+            "label": "Or, Image link",
+            "placeholder": "Image link"
+          }
+        }
+      }
+    },
+    "dashboard": {
+      "widgets": {
+        "titles": {
+          "users": "Users",
+          "entities": "Entities",
+          "feedback": "Feedback",
+          "order": "Order(s)"
+        }
+      },
+
+      "dashboardTable": {
+        "name": "New Order(s)",
+        "search": {
+          "placeholder": "Search Orders..."
+        }
+      }
+    },
+    "order": {
+      "orderTable": {
+        "name": "Order List",
+        "search": {
+          "placeholder": "Search Orders..."
+        },
+        "columns": {
+          "orderCode": "Order Code",
+          "customer": "Customer",
+          "quantity": "Quantity",
+          "location": "Location",
+          "deliver": "Deliver @",
+          "time": "Time",
+          "total": "Total",
+          "action": {
+            "name": "Action",
+            "actionList": {
+              "new": "New",
+              "confirmed": "Confirmed",
+              "sent": "Sent",
+              "delivered": "Delivered",
+              "cancelled": "Cancelled"
+            }
+          }
+        }
+      },
+      "promptMessage": "Type a message to the user.",
+      "actionButton": {
+        "new": "New",
+        "confirmed": "Confirmed",
+        "sent": "Sent",
+        "delivered": "Delivered",
+        "cancelled": "Cancelled",
+        "all": "All"
+      },
+      "confirmMessage": "Are you sure you want to export an excel sheet of listed orders?",
+      "orderPopup": {
+        "details": "Details",
+        "from": "From",
+        "city": "City:",
+        "zip": "Zip:",
+        "mobile": "Mobile:",
+        "email": "Email:",
+        "orderno": "Order No:",
+        "total": "Total:",
+        "items": "Items"
+      }
+    },
+    "schedule": {
+      "widget": {
+        "title": "Scedule",
+        "createButton": "+ Create"
+      },
+      "popup": {
+        "header": {
+          "title": "New Schedule"
+        },
+
+        "body": {
+          "heading": "Today"
+        }
+      },
+      "controlHeader": {
+        "buttons": {
+          "activeButton": "Active",
+          "inactiveButton": "Inactive"
+        }
+      },
+      "broadcastList": {
+        "items": {
+          "txtarea": {
+            "placeholder": "Message"
+          },
+          "peopleReach": "People Reach"
+        }
+      }
+    },
+    "bots": {
+      "alert": {
+        "verifyEmail": {
+          "paragraph1": "You have to verify your email before you can proceed with an agent! Please click this ",
+          "link": "link",
+          "paragraph2": "to verify your email."
+        },
+        "resendEmail": {
+          "paragraph": "Please verify your account clicking the link that we have sent in your email! If you haven't received a verification email, please click ",
+          "link": "resend"
+        }
+      },
+      "createBot": {
+        "card": {
+          "paragraph": "チャットボットを作成より、新しいチャットボットを作成できます。",
+          "paragraphBreak": "It's too easy!",
+          "button": {
+            "newAgent": "チャットボットを作成"
+          }
+        }
+      },
+      "botLists": {
+        "card": {
+          "button": {
+            "dashboard": "Dashboard"
+          },
+          "botBody": {
+            "botInfo": {
+              "orders": "New Orders",
+              "users": "Active Users",
+              "entities": "Total Entities"
+            }
+          },
+          "noRss": {
+            "placeholder": "Redirect url"
+          }
+        }
+      },
+      "newBot": {
+        "name": {
+          "placeholder": "チャットボット名"
+        },
+        "info": {
+          "orders": "オーダー数",
+          "users": "ユーザー数",
+          "entities": "Total Entities"
+        }
+      }
+    },
+    "products": {
+      "productOptions": {
+        "dropdown": {
+          "staticText": "All Entities",
+          "tooltip": "Select a class of entities."
+        },
+        "buttons": {
+          "uncategorized": {
+            "name": "Uncategorized",
+            "tooltip": "Click to find any uncategorized entities."
+          },
+          "demoCSV": {
+            "name": "Demo CSV",
+            "tooltipEnabled": "Click to download a CSV file template for your selected class of entity.",
+            "tooltipDisabled": "Select an intent from drop-down to enable."
+          },
+          "uploadCSV": {
+            "name": "Upload CSV",
+            "tooltipEnabled": "Click to select a CSV file to upload.",
+            "tooltipDisabled": "Select an intent from drop-down to enable."
+          },
+          "create": {
+            "tooltip": "Create new entity."
+          }
+        }
+      },
+      "widgetProductOptions": {
+        "totalCount": {
+          "selected": "Selected",
+          "total": "Total"
+        },
+        "search": {
+          "placeholder": "Search entities..."
+        },
+        "buttons": {
+          "postFacebook": {
+            "name": "Post on Facebook",
+            "tooltipEnabled": "Post selected entities on your Facebook page.",
+            "tooltipDisabled": "Select up to 20 entities to enable.",
+            "popup": {
+              "title": "Bulk Facebook Post",
+              "subTitle": "This message will be the title of your Facebook Post.",
+              "messagePlaceholder": "*Enter your Facebook Post title.",
+              "postButton": "Post"
+            }
+          },
+          "broadcast": {
+            "name": "Broadcast",
+            "tooltipEnabled": "Broadcast selected entities.",
+            "tooltipTrainAgent": "Train Agent to enable.",
+            "tooltipEntities": "Select up to 10 entities to enable.",
+            "popup": {
+              "title": "Promotional Broadcast",
+              "subTitle": "This message will prepand with broadcasted entities.",
+              "subTitleNote": "NOTE: Promotional broadcast is under development, and will be a paid feature.",
+              "messagePlaceholder": "*Enter your message to prepand with selected entities."
+            }
+          },
+          "delete": {
+            "tooltipEnabled": "Delete selected entities with confirmation.",
+            "tooltipDisabled": "Select one or more entities to enable.",
+            "popup": {
+              "singleEntity": "Are you sure you wish to delete this entity?",
+              "pluralEntity": "Are you sure you wish to delete these entities?"
+            }
+          },
+          "image": "Image",
+          "options": {
+            "title": "Options"
+          }
+        }
+      },
+      "productMainTable": {
+        "columns": {
+          "code": "Code",
+          "entity": "Entity",
+          "price": "Price",
+          "offerPrice": "Offer Price",
+          "stock": {
+            "title": "Stock",
+            "available": "Available",
+            "value": "{{val}}",
+            "stockTable": {
+              "available": "Available",
+              "value": "{{val}}"
+            }
+          },
+          "image": "Image",
+          "options": {
+            "title": "Options"
+          }
+        }
+      }
+    },
+    "category": {
+      "dashboard": {
+        "title": "メッセージフロー"
+      },
+      "intentForm": {
+        "headerTitle": "内容追加",
+        "name": {
+          "placeholder": "タイトル"
+        },
+        "phrase": {
+          "placeholder": "単語"
+        },
+        "description": {
+          "placeholder": "詳細"
+        },
+        "attributes": {
+          "warning": "Add attributes only if this class has no subclass!",
+          "placeholder": "Add",
+          "attributeButton": "Add Attribute"
+        },
+        "externalLink": {
+          "errorMessage": "正確なURLの入力をお願いします。 ",
+          "rss": {
+            "placeholder": {
+              "link": "RSS link",
+              "uri": "Redirect URI"
+            }
+          },
+          "noRss": {
+            "placeholder": "Redirect url"
+          }
+        },
+        "updatingButton": "アップデート中..."
+      },
+      "deletePopup": {
+        "headerTitle": "Delete Category   (list) ",
+        "deleteButton": "Transfer & Delete"
+      }
+    },
+    "ai": {
+      "title": "Just TWO Steps To Build Your Usha Agent",
+      "links": {
+        "intent": "Intent Flow Design",
+        "entities": "Entities"
+      }
+    },
+    "configure": {
+      "card": {
+        "title": "有人カスタマーサポート オン/オフ"
+      },
+      "comingSoon": {
+        "title": "Coming really Soon !",
+        "paragraph": "現在調整中です。システムのアップデートまで今しばらくお待ち下さい。"
+      }
+    },
+    "uploadImage": {
+      "widget": {
+        "upload": {
+          "title": "画像をアップロード",
+          "dragdrop": {
+            "title": "画像をドラック＆ドロップ",
+            "paragraph": "または",
+            "uploadButton": "ファイル指定してアップロード",
+            "uploadNote": "画像の拡張子はjpgのみアップロード刷ることができます。"
+          }
+        },
+        "totalImages": {
+          "title": "アップロード画像一覧"
+        },
+        "rejected": {
+          "title": "Rejected Images",
+          "clear": "Clear"
+        }
+      }
+    },
+    "fbConnect": {
+      "dashboard": {
+        "title": "Facebookページと接続するためにFacebookにログインしてください。"
+      },
+      "fbpages": {
+        "titles": {
+          "list": "Facebookページ",
+          "active": "Facebookページに接続中です。"
+        },
+        "buttons": {
+          "connect": "接続",
+          "disconnect": "接続解除"
+        }
+      }
+    },
+    "webConnect": {
+      "mainHeading": "WEBサイトへULKAを導入するための手順",
+      "instruction": "Please copy and paste this code in any web pages, where you want to show Usha web plugin"
+    },
+    "profile": {
+      "card": {
+        "heading": "Your Profile",
+        "agentButton": "Agents",
+        "form": {
+          "company": {
+            "label": "会社名",
+            "placeholder": "会社名"
+          },
+          "firstName": {
+            "label": "名:",
+            "placeholder": "名"
+          },
+          "lastName": {
+            "label": "姓:",
+            "placeholder": "姓"
+          },
+          "address": {
+            "label": "会社住所:"
+          },
+          "mobile": {
+            "label": "電話番号:",
+            "placeholder": "電話番号"
+          },
+          "phone": {
+            "label": "携帯電話番号:",
+            "placeholder": "携帯電話番号"
+          },
+          "primaryEmail": {
+            "label": "メインメールアドレス:",
+            "placeholder": "メールアドレス"
+          },
+          "secondaryEmail": {
+            "label": "Secondary Email:",
+            "placeholder": "Secondary Email"
+          }
+        }
+      }
+    },
+    "password": {
+      "email": {
+        "panel": {
+          "title": "パスワードを忘れた方へ",
+          "description": "登録されたメールアドレスをご入力ください。メールアドレス宛に再設定用パスワードをご送信致します。",
+          "form": {
+            "label": "メールアドレス",
+            "placeholder": "メールアドレス",
+            "sendButton": "パスワードを再設定"
+          }
+        }
+      },
+      "reset": {
+        "panel": {
+          "heading": "パスワードをリセット",
+          "form": {
+            "email": {
+              "label": "メールアドレス",
+              "placeholder": "メールアドレス"
+            },
+            "password": {
+              "label": "パスワード",
+              "placeholder": "パスワード"
+            },
+            "confirm": {
+              "label": "同じパスワードを入力"
+            },
+            "resetButton": "パスワードを再設定"
+          }
+        }
+      }
+    },
+    "login": {
+      "panel": {
+        "title": "Welcome",
+        "description": "Lets make your business a little more simple."
+      },
+      "form": {
+        "placeholders": {
+          "email": "メールアドレス",
+          "password": "パスワード"
+        },
+        "checkbox": {
+          "label": "Remember Me"
+        },
+        "loginButton": "ログイン",
+        "signupButton": "登録",
+        "links": {
+          "forgotPassword": "パスワードを忘れた方へ"
+        }
+      }
+    },
+    "register": {
+      "panel": {
+        "title": "Welcome",
+        "description": "Building AI Agent has never been so easy, whether you have 99 or 99999 products, build you Agent in just 5 minutes, of course without coding.",
+        "form": {
+          "placeholders": {
+            "company": "会社名",
+            "firstName": "名",
+            "lastName": "姓",
+            "email": "メールアドレス",
+            "userName": "ユーザーネーム",
+            "phone": "電話番号",
+            "address": "会社住所",
+            "password": "パスワード",
+            "confirmPassword": "パスワードを再度入力"
+          },
+          "signupButton": "登録"
+        },
+        "loginOption": {
+          "singTitle": "既にアカウントをお持ちの方へ",
+          "tooltip": "ログインへ",
+          "loginButton": "ログイン"
+        }
+      }
+    },
+    "emailVerify": {
+      "email": {
+        "title": "メールアドレス認証",
+        "body": {
+          "heading": "メールアドレスに送付されたURLをクリックして、メールアドレスの認証を行ってください。",
+          "link": "認証"
+        }
+      },
+      "confirm": {
+        "panel": {
+          "title": "登録完了",
+          "paragraphDescription": "Lets start our business",
+          "paragraph": "メールの認証が完了しました。リンクをクリックして",
+          "link": "ログイン"
+        }
+      },
+      "verification": {
+        "panel": {
+          "title": "Registration",
+          "paragraph": "You have successfully registered. An email is sent to you for verification.",
+          "paragraphSmall": "If you haven't received a verification email yet, please try resending your verification email.",
+          "form": {
+            "resendButton": "再送"
+          }
+        }
+      }
+    },
+    "errors": {
+      "403": {
+        "title": "404 Permission Denied",
+        "body": {
+          "heading": "Permission Not Granted"
+        }
+      }
+    },
+    "manage": {
+      "title": "Coming really Soon !",
+      "paragraph": "We are currently building facebook and faq manager, stay with us while we complete it!"
+    },
+    "csvUpload": {
+      "panel": {
+        "heading": "CSVをアップロード",
+        "body": {
+          "heading": "CSVをアップロード",
+          "uploadButton": "アップロード"
+        }
+      }
+    },
+    "changePlan": {
+      "price": {
+        "month": "month"
+      },
+      "buttons": {
+        "currentPlan": "Current Plan",
+        "selectPlan": "Select Plan",
+        "cancel": "Cancel"
+      },
+      "freePlan" : {
+        "planName": "Free",
+        "planDetails": {
+          "dashboard":"Dashboard",
+          "member": "1 member account",
+          "chatbot": "1 chatbot",
+          "userDays": "50 user days"
+        }
+      },
+      "minimalPlan" : {
+        "planName": "Minimal",
+        "planDetails": {
+          "dashboard":"Dashboard",
+          "member": "1 member account",
+          "chatbot": "1 chatbot",
+          "userDays": "300 user days"
+        }
+      },
+      "normalPlan" : {
+        "planName": "Normal",
+        "planDetails": {
+          "dashboard":"Dashboard",
+          "member": "1 member account",
+          "chatbot": "1 chatbot",
+          "userDays": "1000 user days"
+        }
+      },
+      "largePlan" : {
+        "planName": "Large",
+        "planDetails": {
+          "dashboard":"Dashboard",
+          "member": "1 member account",
+          "chatbot": "1 chatbot",
+          "userDays": "3000 user days"
+        }
+      },
+      "enterprisePlan" : {
+        "planName": "Enterprise",
+        "planDetails": {
+          "dashboard":"Dashboard",
+          "member": "1 member account",
+          "chatbot": "1 chatbot",
+          "userDays": "3000 user days",
+          "extra": "500 user days"
+        }
+      },
+      "nextPlan" : {
+        "changePlanNotification" : "Your plan will change to",
+        "date" : {
+          "from" : "from",
+          "in" : "in",
+          "days": "days"
+        }
+      }
+    }
+  }
+}

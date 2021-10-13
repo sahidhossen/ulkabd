@@ -1,0 +1,767 @@
+{
+  "common": {
+    "sidebar": {
+      "dashboard": {
+        "navTitle": "Dashboard",
+        "subMenu": {
+          "orders": "Orders"
+        }
+      },
+      "ai": {
+        "navTitle": "Artificial Intelligence",
+        "subMenus": {
+          "intent": "Intent Flow",
+          "entities": "Entities",
+          "image": "Image Upload"
+        }
+      },
+      "manage": {
+        "navTitle": "Manage",
+        "subMenus": {
+          "configure": "Configure",
+          "broadcast": "Broadcast",
+          "fb": "Facebook Connect",
+          "web_connect": "Web Connect"
+        }
+      }
+    },
+    "navbar": {
+      "links": {
+        "login": "Login"
+      },
+      "dropdown": {
+        "menus": {
+          "profile": "My Profile",
+          "logout": "Logout"
+        }
+      }
+    },
+    "tableOptions": {
+      "prevText": "Previous",
+      "nextText": "Next",
+      "loadingText": "Loading...",
+      "noDataText": "No rows found",
+      "pageText": "Page",
+      "ofText": "of",
+      "rowsText": "rows"
+    },
+    "buttons": {
+      "trainAgent": "Train Agent",
+      "messenger": "Try In Messenger",
+      "cancel": "Cancel",
+      "create": "Create",
+      "submit": "Submit",
+      "send": "Send",
+      "edit": "Edit",
+      "delete": "Delete",
+      "save": "Save"
+    }
+  },
+  "components": {},
+  "pages": {
+    "productCreate": {
+      "widget": {
+        "title": "Create Entity",
+        "productName": {
+          "placeholder": "Entity name"
+        }
+      },
+      "entity": {
+        "subtitle": "Entity details",
+        "form": {
+          "code": {
+            "label": "Code",
+            "placeholder": "Entity code"
+          },
+          "detail": {
+            "label": "Details",
+            "placeholder": "Entity details"
+          },
+          "price": {
+            "label": "Price",
+            "placeholder": "Entity price"
+          },
+          "offerPrice": {
+            "label": "Offer Price",
+            "placeholder": "Entity offer price"
+          },
+          "stock": {
+            "label": "Stock",
+            "placeholder": "Number of entities"
+          },
+          "priority": {
+            "label": "Priority",
+            "rate": "Rate"
+          },
+          "unit": {
+            "label": "Unit",
+            "placeholder": "Entity unit"
+          },
+          "web": {
+            "label": "Web URL",
+            "placeholder": "https://"
+          }
+        }
+      },
+
+      "image": {
+        "subtitle": "Add image",
+        "form": {
+          "remove": "Remove image",
+          "link": {
+            "label": "Or, Image link",
+            "placeholder": "Image link"
+          }
+        }
+      },
+
+      "intent": {
+        "subtitle": "Select intent",
+        "form": {
+          "label": "Intent",
+          "optionValue": "Select intent"
+        }
+      },
+
+      "attribute": {
+        "subtitle": "Entity attributes",
+        "form": {
+          "label": "Attribute name",
+          "placeholder": "Place holder"
+        }
+      }
+    },
+
+    "productUpdate": {
+      "widget": {
+        "title": "Update Entity",
+        "buttons": {
+          "post": "Post on Facebook",
+          "remove": "Remove from Facebook",
+          "create": "Create New"
+        },
+        "productName": {
+          "placeholder": "Entity name"
+        }
+      },
+      "entity": {
+        "subtitle": "Entity details",
+        "form": {
+          "code": {
+            "label": "Code",
+            "placeholder": "Entity code"
+          },
+          "detail": {
+            "label": "Details"
+          },
+          "price": {
+            "label": "Price",
+            "placeholder": "Price"
+          },
+          "offerPrice": {
+            "label": "Offer price",
+            "placeholder": "Offer price "
+          },
+          "stock": {
+            "label": "Stock",
+            "placeholder": "Number of products"
+          },
+          "rating": {
+            "label": "Rating",
+            "rate": "Rate"
+          },
+          "unit": {
+            "label": "Units",
+            "placeholder": "Units"
+          },
+          "web": {
+            "label": "Web URL",
+            "placeholder": "http://"
+          }
+        }
+      },
+
+      "intent": {
+        "subtitle": "Select intent",
+        "form": {
+          "label": "Intent",
+          "optionValue": "Select intent"
+        }
+      },
+
+      "attribute": {
+        "subtitle": "Entity attributes"
+      },
+      "image": {
+        "subtitle": "Add image",
+        "form": {
+          "remove": "Remove image",
+          "link": {
+            "label": "Or, Image link",
+            "placeholder": "Image link"
+          }
+        }
+      }
+    },
+    "dashboard": {
+      "widgets": {
+        "titles": {
+          "users": "Users",
+          "entities": "Entities",
+          "feedback": "Feedback",
+          "order": "Order(s)"
+        }
+      },
+
+      "dashboardTable": {
+        "name": "New Order(s)",
+        "search": {
+          "placeholder": "Search Orders..."
+        }
+      }
+    },
+    "order": {
+      "orderTable": {
+        "name": "Order List",
+        "search": {
+          "placeholder": "Search Orders..."
+        },
+        "columns": {
+          "orderCode": "Order Code",
+          "customer": "Customer",
+          "quantity": "Quantity",
+          "location": "Location",
+          "deliver": "Deliver @",
+          "time": "Time",
+          "total": "Total",
+          "action": {
+            "name": "Action",
+            "actionList": {
+              "new": "New",
+              "confirmed": "Confirmed",
+              "sent": "Sent",
+              "delivered": "Delivered",
+              "cancelled": "Cancelled"
+            }
+          }
+        }
+      },
+      "promptMessage": "Type a message to the user.",
+      "actionButton": {
+        "new": "New",
+        "confirmed": "Confirmed",
+        "sent": "Sent",
+        "delivered": "Delivered",
+        "cancelled": "Cancelled",
+        "all": "All"
+      },
+      "confirmMessage": "Are you sure you want to export an excel sheet of listed orders?",
+      "orderPopup": {
+        "details": "Details",
+        "from": "From",
+        "city": "City:",
+        "zip": "Zip:",
+        "mobile": "Mobile:",
+        "email": "Email:",
+        "orderno": "Order No:",
+        "total": "Total:",
+        "items": "Items"
+      }
+    },
+    "schedule": {
+      "widget": {
+        "title": "Scedule",
+        "createButton": "+ Create"
+      },
+      "popup": {
+        "header": {
+          "title": "New Schedule"
+        },
+
+        "body": {
+          "heading": "Today"
+        }
+      },
+      "controlHeader": {
+        "buttons": {
+          "activeButton": "Active",
+          "inactiveButton": "Inactive"
+        }
+      },
+      "broadcastList": {
+        "items": {
+          "txtarea": {
+            "placeholder": "Message"
+          },
+          "peopleReach": "People Reach"
+        }
+      }
+    },
+    "bots": {
+      "alert": {
+        "verifyEmail": {
+          "paragraph1": "You have to verify your email before you can proceed with an agent! Please click this ",
+          "link": "link",
+          "paragraph2": "to verify your email."
+        },
+        "resendEmail": {
+          "paragraph": "Please verify your account clicking the link that we have sent in your email! If you haven't received a verification email, please click ",
+          "link": "resend"
+        }
+      },
+      "createBot": {
+        "card": {
+          "paragraph": "Click \"Create New Agent\", type agent name and submit.",
+          "paragraphBreak": "It's too easy!",
+          "button": {
+            "newAgent": "Create New Agent"
+          }
+        }
+      },
+      "botLists": {
+        "card": {
+          "button": {
+            "dashboard": "Dashboard"
+          },
+          "botBody": {
+            "botInfo": {
+              "orders": "New Orders",
+              "users": "Active Users",
+              "entities": "Total Entities"
+            }
+          },
+          "noRss": {
+            "placeholder": "Redirect url"
+          }
+        }
+      },
+      "newBot": {
+        "name": {
+          "placeholder": "Agent Name"
+        },
+        "info": {
+          "orders": "New Orders",
+          "users": "Active Users",
+          "entities": "Total Entities"
+        }
+      }
+    },
+    "products": {
+      "productOptions": {
+        "dropdown": {
+          "staticText": "All Entities",
+          "tooltip": "Select a class of entities."
+        },
+        "buttons": {
+          "uncategorized": {
+            "name": "Uncategorized",
+            "tooltip": "Click to find any uncategorized entities."
+          },
+          "demoCSV": {
+            "name": "Demo CSV",
+            "tooltipEnabled": "Click to download a CSV file template for your selected class of entity.",
+            "tooltipDisabled": "Select an intent from drop-down to enable."
+          },
+          "uploadCSV": {
+            "name": "Upload CSV",
+            "tooltipEnabled": "Click to select a CSV file to upload.",
+            "tooltipDisabled": "Select an intent from drop-down to enable."
+          },
+          "create": {
+            "tooltip": "Create new entity."
+          }
+        }
+      },
+      "widgetProductOptions": {
+        "totalCount": {
+          "selected": "Selected",
+          "total": "Total"
+        },
+        "search": {
+          "placeholder": "Search entities..."
+        },
+        "buttons": {
+          "postFacebook": {
+            "name": "Post on Facebook",
+            "tooltipEnabled": "Post selected entities on your Facebook page.",
+            "tooltipDisabled": "Select up to 20 entities to enable.",
+            "popup": {
+              "title": "Bulk Facebook Post",
+              "subTitle": "This message will be the title of your Facebook Post.",
+              "messagePlaceholder": "*Enter your Facebook Post title.",
+              "postButton": "Post"
+            }
+          },
+          "broadcast": {
+            "name": "Broadcast",
+            "tooltipEnabled": "Broadcast selected entities.",
+            "tooltipTrainAgent": "Train Agent to enable.",
+            "tooltipEntities": "Select up to 10 entities to enable.",
+            "popup": {
+              "title": "Promotional Broadcast",
+              "subTitle": "This message will prepand with broadcasted entities.",
+              "subTitleNote": "NOTE: Promotional broadcast is under development, and will be a paid feature.",
+              "messagePlaceholder": "*Enter your message to prepand with selected entities."
+            }
+          },
+          "delete": {
+            "tooltipEnabled": "Delete selected entities with confirmation.",
+            "tooltipDisabled": "Select one or more entities to enable.",
+            "popup": {
+              "singleEntity": "Are you sure you wish to delete this entity?",
+              "pluralEntity": "Are you sure you wish to delete these entities?"
+            }
+          },
+          "image": "Image",
+          "options": {
+            "title": "Options"
+          }
+        }
+      },
+      "productMainTable": {
+        "columns": {
+          "code": "Code",
+          "entity": "Entity",
+          "price": "Price",
+          "offerPrice": "Offer Price",
+          "stock": {
+            "title": "Stock",
+            "available": "Available",
+            "value": "{{val}}",
+            "stockTable": {
+              "available": "Available",
+              "value": "{{val}}"
+            }
+          },
+          "image": "Image",
+          "options": {
+            "title": "Options"
+          }
+        }
+      }
+    },
+    "category": {
+      "dashboard": {
+        "title": "Intent Flow Design"
+      },
+      "intentForm": {
+        "headerTitle": "Create Intent",
+        "name": {
+          "placeholder": "Intent Name"
+        },
+        "phrase": {
+          "placeholder": "Phrase"
+        },
+        "description": {
+          "placeholder": "Details"
+        },
+        "attributes": {
+          "warning": "Add attributes only if this class has no subclass!",
+          "placeholder": "Add",
+          "attributeButton": "Add Attribute"
+        },
+        "externalLink": {
+          "errorMessage": "please type valid url",
+          "rss": {
+            "placeholder": {
+              "link": "RSS link",
+              "uri": "Redirect URI"
+            }
+          },
+          "noRss": {
+            "placeholder": "Redirect url"
+          }
+        },
+        "updatingButton": "Updating..."
+      },
+      "deletePopup": {
+        "headerTitle": "Delete Category   (list) ",
+        "deleteButton": "Transfer & Delete"
+      }
+    },
+    "ai": {
+      "title": "Just TWO Steps To Build Your Usha Agent",
+      "links": {
+        "intent": "Intent Flow Design",
+        "entities": "Entities"
+      }
+    },
+    "configure": {
+      "card": {
+        "title": "Agent Enable/Disable"
+      },
+      "comingSoon": {
+        "title": "Coming really Soon !",
+        "paragraph": "We are currently building advanced configuration options, stay with us while we complete it!"
+      }
+    },
+    "uploadImage": {
+      "widget": {
+        "upload": {
+          "title": "Image Upload",
+          "dragdrop": {
+            "title": "Drag & Drop Here",
+            "paragraph": "OR",
+            "uploadButton": "Upload Files",
+            "uploadNote": "Image must be in .JPG format & name should be EntityCode.JPG"
+          }
+        },
+        "totalImages": {
+          "title": "Uploaded Images"
+        },
+        "rejected": {
+          "title": "Rejected Images",
+          "clear": "Clear"
+        }
+      }
+    },
+    "fbConnect": {
+      "dashboard": {
+        "title": "Login to Facebook to connect with your Facebook Page "
+      },
+      "fbpages": {
+        "titles": {
+          "list": "Your Facebook pages",
+          "active": "Connected Facebook page"
+        },
+        "buttons": {
+          "connect": "Connect",
+          "disconnect": "Disconnect"
+        }
+      }
+    },
+    "webConnect": {
+      "mainHeading": "Connect with website", 
+      "instruction": "Please copy and paste this code in any web pages, where you want to show Usha web plugin"
+    },
+    "profile": {
+      "card": {
+        "heading": "Your Profile",
+        "agentButton": "Agents",
+        "form": {
+          "company": {
+            "label": "Company Name",
+            "placeholder": "Company Name"
+          },
+          "firstName": {
+            "label": "First Name:",
+            "placeholder": "First Name"
+          },
+          "lastName": {
+            "label": "Last Name:",
+            "placeholder": "Last Name"
+          },
+          "address": {
+            "label": "Business Address:"
+          },
+          "mobile": {
+            "label": "Mobile:",
+            "placeholder": "Mobile Number"
+          },
+          "phone": {
+            "label": "Phone:",
+            "placeholder": "Phone Number"
+          },
+          "primaryEmail": {
+            "label": "Primary Email:",
+            "placeholder": "Email"
+          },
+          "secondaryEmail": {
+            "label": "Secondary Email:",
+            "placeholder": "Secondary Email"
+          }
+        }
+      }
+    },
+    "password": {
+      "email": {
+        "panel": {
+          "title": "Forget Password",
+          "description": "Provide you email address associated with Usha account, we will send reset password instructions in your email account.",
+          "form": {
+            "label": "E-Mail Address",
+            "placeholder": "Email Address",
+            "sendButton": "Send Me Instruction"
+          }
+        }
+      },
+      "reset": {
+        "panel": {
+          "heading": "Reset Password",
+          "form": {
+            "email": {
+              "label": "EMail Address",
+              "placeholder": "Email"
+            },
+            "password": {
+              "label": "Password",
+              "placeholder": "Password"
+            },
+            "confirm": {
+              "label": "Confirm Password"
+            },
+            "resetButton": "Reset Password"
+          }
+        }
+      }
+    },
+    "login": {
+      "panel": {
+        "title": "Welcome",
+        "description": "Lets make your business a little more simple."
+      },
+      "form": {
+        "placeholders": {
+          "email": "Email Address",
+          "password": "Password"
+        },
+        "checkbox": {
+          "label": "Remember Me"
+        },
+        "loginButton": "Login",
+        "signupButton": "Register",
+        "links": {
+          "forgotPassword": "Forgot Your Password?"
+        }
+      }
+    },
+    "register": {
+      "panel": {
+        "title": "Welcome",
+        "description": "Building AI Agent has never been so easy, whether you have 99 or 99999 products, build you Agent in just 5 minutes, of course without coding.",
+        "form": {
+          "placeholders": {
+            "company": "Company Name",
+            "firstName": "First Name",
+            "lastName": "Last Name",
+            "email": "Email Address",
+            "userName": "User Name",
+            "phone": "Phone",
+            "address": "Office Address",
+            "password": "Password",
+            "confirmPassword": "Confirm Password"
+          },
+          "signupButton": "Sign Up"
+        },
+        "loginOption": {
+          "singTitle": "Already have an account?",
+          "tooltip": "Go to Login",
+          "loginButton": "Login"
+        }
+      }
+    },
+    "emailVerify": {
+      "email": {
+        "title": "USHA Email Verification",
+        "body": {
+          "heading": "Click The Following Link To Verify Your Email",
+          "link": "Verify"
+        }
+      },
+      "confirm": {
+        "panel": {
+          "title": "Registration Confirmed",
+          "paragraphDescription": "Lets start our business",
+          "paragraph": "Your Email is successfully verified. Click here to",
+          "link": "Login"
+        }
+      },
+      "verification": {
+        "panel": {
+          "title": "Registration",
+          "paragraph": "You have successfully registered. An email is sent to you for verification.",
+          "paragraphSmall": "If you haven't received a verification email yet, please try resending your verification email.",
+          "form": {
+            "resendButton": "Resend"
+          }
+        }
+      }
+    },
+    "errors": {
+      "403": {
+        "title": "404 Permission Denied",
+        "body": {
+          "heading": "Permission Not Granted"
+        }
+      }
+    },
+    "manage": {
+      "title": "Coming really Soon !",
+      "paragraph": "We are currently building facebook and faq manager, stay with us while we complete it!"
+    },
+    "csvUpload": {
+      "panel": {
+        "heading": "Upload CSV ",
+        "body": {
+          "heading": "Upload your csv",
+          "uploadButton": "Upload"
+        }
+      }
+    },
+
+    "changePlan": {
+      "price": {
+        "month": "month"
+      },
+      "buttons": {
+        "currentPlan": "Current Plan",
+        "selectPlan": "Select Plan",
+        "cancel": "Cancel"
+      },
+      "freePlan" : {
+        "planName": "Free",
+        "planDetails": {
+          "dashboard":"Dashboard",
+          "member": "1 member account",
+          "chatbot": "1 chatbot",
+          "userDays": "50 user days"
+        }
+      },
+      "minimalPlan" : {
+        "planName": "Minimal",
+        "planDetails": {
+          "dashboard":"Dashboard",
+          "member": "1 member account",
+          "chatbot": "1 chatbot",
+          "userDays": "300 user days"
+        }
+      },
+      "normalPlan" : {
+        "planName": "Normal",
+        "planDetails": {
+          "dashboard":"Dashboard",
+          "member": "1 member account",
+          "chatbot": "1 chatbot",
+          "userDays": "1000 user days"
+        }
+      },
+      "largePlan" : {
+        "planName": "Large",
+        "planDetails": {
+          "dashboard":"Dashboard",
+          "member": "1 member account",
+          "chatbot": "1 chatbot",
+          "userDays": "3000 user days"
+        }
+      },
+      "enterprisePlan" : {
+        "planName": "Enterprise",
+        "planDetails": {
+          "dashboard":"Dashboard",
+          "member": "1 member account",
+          "chatbot": "1 chatbot",
+          "userDays": "3000 user days",
+          "extra": "500 user days"
+        }
+      },
+      "nextPlan" : {
+        "changePlanNotification" : "Your plan will change to",
+        "date" : {
+          "from" : "from",
+          "in" : "in",
+          "days": "days"
+        }
+      }
+    }
+  }
+}

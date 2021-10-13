@@ -1,0 +1,766 @@
+{
+  "common": {
+    "sidebar": {
+      "dashboard": {
+        "navTitle": "ড্যাশবোর্ড",
+        "subMenu": {
+          "orders": "অর্ডার"
+        }
+      },
+      "ai": {
+        "navTitle": "কৃত্রিম বুদ্ধিমত্তা",
+        "subMenus": {
+          "intent": "ইন্টেন্ট ফ্লো",
+          "entities": "সত্ত্বা",
+          "image": "চিত্র আপলোড"
+        }
+      },
+      "manage": {
+        "navTitle": "পরিচালনা করা",
+        "subMenus": {
+          "configure": "সজ্জিত করা",
+          "broadcast": "ব্রডকাস্ট",
+          "fb": "ফেসবুক কানেক্ট", 
+          "web_connect": "ওয়েব কানেক্ট"
+        }
+      }
+    },
+    "navbar": {
+      "links": {
+        "login": "প্রবেশ করুন"
+      },
+      "dropdown": {
+        "menus": {
+          "profile": "আমার প্রোফাইল",
+          "logout": "প্রস্থান"
+        }
+      }
+    },
+    "tableOptions": {
+      "prevText": "আগে",
+      "nextText": "পরবর্তী",
+      "loadingText": "লোড হচ্ছে ...",
+      "noDataText": "কোনও সারি পাওয়া যায় নি",
+      "pageText": "পৃষ্ঠা",
+      "ofText": "এর",
+      "rowsText": "সারি"
+    },
+    "buttons": {
+      "trainAgent": "ট্রেন এজেন্ট",
+      "messenger": "ম্যাসেঞ্জারে চেষ্টা করুন",
+      "cancel": "বাতিল",
+      "create": "সৃষ্টি",
+      "submit": "জমা দিন",
+      "send": "পাঠান",
+      "edit": "সম্পাদন করা",
+      "delete": "মুছে ফেলা",
+      "save": "সংরক্ষণ"
+    }
+  },
+  "components": {},
+  "pages": {
+    "productCreate": {
+      "widget": {
+        "title": "সত্তা তৈরি করুন",
+        "productName": {
+          "placeholder": "সত্তার নাম"
+        }
+      },
+      "entity": {
+        "subtitle": "সত্তা বিশদ",
+        "form": {
+          "code": {
+            "label": "কোড",
+            "placeholder": "কোড"
+          },
+          "detail": {
+            "label": "বিস্তারিত",
+            "placeholder": "বিশদ"
+          },
+          "price": {
+            "label": "মূল্য",
+            "placeholder": "মূল্য"
+          },
+          "offerPrice": {
+            "label": "প্রস্তাব মূল্য",
+            "placeholder": "প্রস্তাব মূল্য"
+          },
+          "stock": {
+            "label": "স্টক",
+            "placeholder": "পণ্য সংখ্যা"
+          },
+          "priority": {
+            "label": "অগ্রাধিকার",
+            "rate": "রেট"
+          },
+          "unit": {
+            "label": "ইউনিট",
+            "placeholder": "ইউনিট"
+          },
+          "web": {
+            "label": "ওয়েব URL",
+            "placeholder": "https://"
+          }
+        }
+      },
+
+      "image": {
+        "subtitle": "ছবি সংযুক্ত কর",
+        "form": {
+          "remove": "চিত্র সরান",
+          "link": {
+            "label": "অথবা, চিত্র লিঙ্ক",
+            "placeholder": "চিত্র লিঙ্ক"
+          }
+        }
+      },
+
+      "intent": {
+        "subtitle": "উদ্দেশ্য নির্বাচন করুন",
+        "form": {
+          "label": "অভিপ্রায়",
+          "optionValue": "উদ্দেশ্য নির্বাচন করুন"
+        }
+      },
+
+      "attribute": {
+        "subtitle": "সত্তার বৈশিষ্ট্য",
+        "form": {
+          "label": "নাম গুন",
+          "placeholder": "স্থানধারক"
+        }
+      }
+    },
+
+    "productUpdate": {
+      "widget": {
+        "title": "সত্তা আপডেট করুন",
+        "buttons": {
+          "post": "ফেসবুকে পোস্ট করুন",
+          "remove": "ফেসবুক থেকে সরান",
+          "create": "নতুন তৈরী করা"
+        },
+        "productName": {
+          "placeholder": "সত্তার নাম"
+        }
+      },
+      "entity": {
+        "subtitle": "সত্তা বিশদ",
+        "form": {
+          "code": {
+            "label": "কোড",
+            "placeholder": "কোড"
+          },
+          "detail": {
+            "label": "বিস্তারিত"
+          },
+          "price": {
+            "label": "মূল্য",
+            "placeholder": "মূল্য"
+          },
+          "offerPrice": {
+            "label": "প্রস্তাব মূল্য",
+            "placeholder": "প্রস্তাব মূল্য"
+          },
+          "stock": {
+            "label": "স্টক",
+            "placeholder": "পণ্য সংখ্যা"
+          },
+          "rating": {
+            "label": "অগ্রাধিকার",
+            "rate": "রেট"
+          },
+          "unit": {
+            "label": "ইউনিট",
+            "placeholder": "ইউনিট"
+          },
+          "web": {
+            "label": "ওয়েব URL",
+            "placeholder": "http://"
+          }
+        }
+      },
+
+      "intent": {
+        "subtitle": "উদ্দেশ্য নির্বাচন করুন",
+        "form": {
+          "label": "উদ্দেশ্য",
+          "optionValue": "উদ্দেশ্য নির্বাচন করুন"
+        }
+      },
+
+      "attribute": {
+        "subtitle": "সত্তার বৈশিষ্ট্য"
+      },
+      "image": {
+        "subtitle": "ছবি সংযুক্ত কর",
+        "form": {
+          "remove": "চিত্র সরান",
+          "link": {
+            "label": "অথবা, চিত্র লিঙ্ক",
+            "placeholder": "চিত্র লিঙ্ক"
+          }
+        }
+      }
+    },
+    
+    "dashboard": {
+      "widgets": {
+        "titles": {
+          "users": "ব্যবহারকারীরা",
+          "entities": "সংস্থাগুলো",
+          "feedback": "প্রতিক্রিয়া",
+          "order": "অর্ডার (গুলি)"
+        }
+      },
+
+      "dashboardTable": {
+        "name": "নতুন আদেশসমূহ",
+        "search": {
+          "placeholder": "আদেশ অনুসন্ধান করুন ..."
+        }
+      }
+    },
+    "order": {
+      "orderTable": {
+        "name": "অর্ডার তালিকা",
+        "search": {
+          "placeholder": "অনুসন্ধান আদেশ..."
+        },
+        "columns": {
+          "orderCode": "অর্ডার কোড",
+          "customer": "ক্রেতা",
+          "quantity": "পরিমাণ",
+          "location": "অবস্থান",
+          "deliver": "প্রদান @",
+          "time": "সময়",
+          "total": "সর্বমোট",
+          "action": {
+            "name": "কর্ম",
+            "actionList": {
+              "new": "নতুন",
+              "confirmed": "নিশ্চিত",
+              "sent": "প্রেরিত",
+              "delivered": "নিষ্কৃত",
+              "cancelled": "বাতিল "
+            }
+          }
+        }
+      },
+      "promptMessage": "ব্যবহারকারীর কাছে একটি বার্তা টাইপ করুন।",
+      "actionButton": {
+        "new": "নতুন",
+        "confirmed": "নিশ্চিত",
+        "sent": "প্রেরিত",
+        "delivered": "নিষ্কৃত",
+        "cancelled": "বাতিল",
+        "all": "সব"
+      },
+      "confirmMessage": "আপনি কি নিশ্চিতরূপে তালিকাভুক্ত আদেশগুলির একটি এক্সেল শীট রফতানি করতে চান?",
+      "orderPopup": {
+        "details": "বিস্তারিত",
+        "from": "থেকে",
+        "city": "শহর:",
+        "zip": "Zip:",
+        "mobile": "মুঠোফোন:",
+        "email": "ইমেইল:",
+        "orderno": "আদেশ নং:",
+        "total": "মোট:",
+        "items": "চলছে"
+      }
+    },
+    "schedule": {
+      "widget": {
+        "title": "তফসিল",
+        "createButton": "+ সৃষ্টি"
+      },
+      "popup": {
+        "header": {
+          "title": "নতুন সূচি"
+        },
+        "body": {
+          "heading": "আজ"
+        }
+      },
+      "controlHeader": {
+        "buttons": {
+          "activeButton": "সক্রিয়",
+          "inactiveButton": "নিষ্ক্রিয়"
+        }
+      },
+      "broadcastList": {
+        "items": {
+          "txtarea": {
+            "placeholder": "বার্তা"
+          },
+          "peopleReach": "মানুষ পৌঁছন"
+        }
+      }
+    },
+    "bots": {
+      "alert": {
+        "verifyEmail": {
+          "paragraph1": "কোনও এজেন্টের সাথে এগিয়ে যাওয়ার আগে আপনাকে নিজের ইমেলটি যাচাই করতে হবে! এটি ক্লিক করুন ",
+          "link": "লিংক",
+          "paragraph2": "আপনার ইমেল যাচাই করতে।"
+        },
+        "resendEmail": {
+          "paragraph": "আমরা আপনার ইমেলটিতে যে লিঙ্কটি প্রেরণ করেছি তাতে ক্লিক করে আপনার অ্যাকাউন্টটি যাচাই করুন! আপনি যদি যাচাইকরণের ইমেল না পেয়ে থাকেন তবে দয়া করে ক্লিক করুন ",
+          "link": "পুনরায় পাঠান"
+        }
+      },
+      "createBot": {
+        "card": {
+          "paragraph": "ক্লিক \"নতুন এজেন্ট তৈরি করুন\", এজেন্ট নাম লিখুন এবং জমা দিন।",
+          "paragraphBreak": "এটা খুব সহজ!",
+          "button": {
+            "newAgent": "নতুন এজেন্ট তৈরি করুন"
+          }
+        }
+      },
+      "botLists": {
+        "card": {
+          "button": {
+            "dashboard": "ড্যাশবোর্ড"
+          },
+          "botBody": {
+            "botInfo": {
+              "orders": "নতুন আদেশসমূহ",
+              "users": "সক্রিয় ব্যবহারকারী",
+              "entities": "মোট সত্তা"
+            }
+          },
+          "noRss": {
+            "placeholder": "পুনর্নির্দেশ url"
+          }
+        }
+      },
+      "newBot": {
+        "name": {
+          "placeholder": "এজেন্ট নাম"
+        },
+        "info": {
+          "orders": "নতুন আদেশসমূহ",
+          "users": "সক্রিয় ব্যবহারকারী",
+          "entities": "মোট সত্তা"
+        }
+      }
+    },
+    "products": {
+      "productOptions": {
+        "dropdown": {
+          "staticText": "সমস্ত সত্তা",
+          "tooltip": "সত্তার শ্রেণি নির্বাচন করুন।"
+        },
+        "buttons": {
+          "uncategorized": {
+            "name": "শ্রেণী বহির্ভূত",
+            "tooltip": "কোনও শ্রেণিবদ্ধ সত্তা সন্ধান করতে ক্লিক করুন।"
+          },
+          "demoCSV": {
+            "name": "ডেমো সিএসভি",
+            "tooltipEnabled": "আপনার নির্বাচিত সত্তা শ্রেণীর জন্য একটি CSV ফাইল টেম্পলেট ডাউনলোড করতে ক্লিক করুন।",
+            "tooltipDisabled": "সক্ষম করতে ড্রপ-ডাউন থেকে একটি উদ্দেশ্য নির্বাচন করুন।"
+          },
+          "uploadCSV": {
+            "name": "সিএসভি আপলোড করুন",
+            "tooltipEnabled": "আপলোড করার জন্য একটি সিএসভি ফাইল নির্বাচন করতে ক্লিক করুন।",
+            "tooltipDisabled": "সক্ষম করতে ড্রপ-ডাউন থেকে একটি উদ্দেশ্য নির্বাচন করুন।"
+          },
+          "create": {
+            "tooltip": "নতুন সত্তা তৈরি করুন।"
+          }
+        }
+      },
+      "widgetProductOptions": {
+        "totalCount": {
+          "selected": "নির্বাচিত",
+          "total": "মোট"
+        },
+        "search": {
+          "placeholder": "সত্তা সন্ধান করুন..."
+        },
+        "buttons": {
+          "postFacebook": {
+            "name": "ফেসবুকে পোস্ট করুন",
+            "tooltipEnabled": "আপনার ফেসবুক পেজে নির্বাচিত সত্তা পোস্ট করুন।",
+            "tooltipDisabled": "সক্ষম করতে 20 টি সত্ত্বা নির্বাচন করুন।",
+            "popup": {
+              "title": "বাল্ক ফেসবুক পোস্ট",
+              "subTitle": "এই বার্তাটি আপনার ফেসবুক পোস্টের শিরোনাম হবে।",
+              "messagePlaceholder": "* আপনার ফেসবুক পোস্টের শিরোনাম লিখুন।",
+              "postButton": "পোস্ট"
+            }
+          },
+          "broadcast": {
+            "name": "ব্রডকাস্ট",
+            "tooltipEnabled": "নির্বাচিত সত্তা সম্প্রচার করুন।",
+            "tooltipTrainAgent": "সক্ষম করতে ট্রেন এজেন্ট।",
+            "tooltipEntities": "সক্ষম করতে 10 টি সত্ত্বা নির্বাচন করুন।",
+            "popup": {
+              "title": "প্রচারমূলক সম্প্রচার",
+              "subTitle": "এই বার্তাটি সম্প্রচারিত সংস্থাগুলির সাথে পুনরায় ছড়িয়ে পড়বে।",
+              "subTitleNote": "দ্রষ্টব্য: প্রচারমূলক সম্প্রচারের কাজ চলছে, এবং এটি একটি অর্থ প্রদানের বৈশিষ্ট্য হবে।",
+              "messagePlaceholder": "* নির্বাচিত সংস্থাগুলি সহ প্রিপ্যান্ড করতে আপনার বার্তাটি প্রবেশ করান।"
+            }
+          },
+          "delete": {
+            "tooltipEnabled": "নিশ্চিতকরণ সহ নির্বাচিত সত্তা মুছুন।",
+            "tooltipDisabled": "সক্ষম করতে এক বা একাধিক সত্তা নির্বাচন করুন।",
+            "popup": {
+              "singleEntity": "আপনি কি নিশ্চিত যে আপনি এই সত্তাটি মুছতে চান?",
+              "pluralEntity": "আপনি কি নিশ্চিত যে আপনি এই সত্তাগুলি মুছতে চান?"
+            }
+          },
+          "image": "ছবি",
+          "options": {
+            "title": "বিকল্প"
+          }
+        }
+      },
+
+      "productMainTable": {
+        "columns": {
+          "code": "কোড",
+          "entity": "এনটিটি",
+          "price": "মূল্য",
+          "offerPrice": "অফার মূল্য",
+          "stock": {
+            "title": "স্টক",
+            "available": "সহজলভ্য",
+            "value": "{{val}}",
+            "stockTable": {
+              "available": "সহজলভ্য",
+              "value": "{{val}}"
+            }
+          },
+          "image": "ইমেজ",
+          "options": {
+            "title": "অপশনস"
+          }
+        }
+      }
+    },
+    "category": {
+      "dashboard": {
+        "title": "ইনটেন্ট ফ্লো ডিজাইন"
+      },
+      "intentForm": {
+        "headerTitle": "তৈরি ইনটেন্ট",
+        "name": {
+          "placeholder": "ইনটেন্ট নাম"
+        },
+        "phrase": {
+          "placeholder": "বাক্য"
+        },
+        "description": {
+          "placeholder": "বিস্তারিত"
+        },
+        "attributes": {
+          "warning": "এই শ্রেণীর কোনও সাব-ক্লাস না থাকলেই বৈশিষ্ট্যগুলি যুক্ত করুন!",
+          "placeholder": "যোগ",
+          "attributeButton": "যোগ বৈশিষ্ট্য"
+        },
+        "externalLink": {
+          "errorMessage": "দয়া করে বৈধ ইউআরএল টাইপ করুন",
+          "rss": {
+            "placeholder": {
+              "link": "আরএসএস লিঙ্ক",
+              "uri": "রিডাইরেক্ট ইউ আর আই"
+            }
+          },
+          "noRss": {
+            "placeholder": "রিডাইরেক্ট ইউ আর আই"
+          }
+        },
+        "updatingButton": "আপডেট করা হচ্ছে..."
+      },
+      "deletePopup": {
+        "headerTitle": "ক্যাটাগরি (তালিকা) ডিলিট",
+        "deleteButton": "ট্রান্সফার এবং ডিলিট"
+      }
+    },
+    "ai": {
+      "title": "আপনার USHA এজেন্ট গড়ার জন্য কেবলমাত্র দুটি পদক্ষেপ",
+      "links": {
+        "intent": "ইন্টেন্ট ফ্লো ডিজাইন",
+        "entities": "এনটিটিগুলো"
+      }
+    },
+    "configure": {
+      "card": {
+        "title": "এজেন্ট এনাবল/ডিজেবল করুন"
+      },
+      "comingSoon": {
+        "title": "শীঘ্রই আসছে!",
+        "paragraph": "আমরা বর্তমানে উন্নত কনফিগারেশন অপশনস তৈরি করছি, এটি সম্পূর্ণ করার সময় আমাদের সাথে থাকুন!"
+      }
+    },
+    "uploadImage": {
+      "widget": {
+        "upload": {
+          "title": "ইমেজ আপলোড",
+          "dragdrop": {
+            "title": "এখানে ড্র্যাগ & ড্রপ করুন",
+            "paragraph": "অথবা",
+            "uploadButton": "ফাইল আপলোড কর",
+            "uploadNote": "ইমেজ অবশ্যই .JPG ফর্ম্যাটে থাকতে হবে এবং নামটি EntityCode.JPG হওয়া উচিত"
+          }
+        },
+        "totalImages": {
+          "title": "আপলোডেড ইমেজগুলো"
+        },
+        "rejected": {
+          "title": "রিজেক্টেড ইমেজগুলো",
+          "clear": "ক্লিয়ার"
+        }
+      }
+    },
+    "fbConnect": {
+      "dashboard": {
+        "title": "আপনার ফেসবুক পেজের সাথে সংযোগ করতে ফেসবুকে লগইন করুন"
+      },
+      "fbpages": {
+        "titles": {
+          "list": "আপনার ফেসবুক পেজগুলি",
+          "active": "সংযুক্ত ফেসবুক পেজ"
+        },
+        "buttons": {
+          "connect": "সংযোগ করুন",
+          "disconnect": "ডিসকানেক্ট"
+        }
+      }
+    },
+    "webConnect": {
+      "mainHeading": "ওয়েবসাইটের সাথে সংযোগ",
+      "instruction": "দয়া করে নিচের কোডটি কপি করে আপনার ওয়েবসাইটের যে যে পেজে চ্যাটবট দেখাতে চান সেখানে পেস্ট করুন।"
+    },
+    "profile": {
+      "card": {
+        "heading": "আপনার প্রোফাইল",
+        "agentButton": "এজেন্টস",
+        "form": {
+          "company": {
+            "label": "কোমপানির নাম",
+            "placeholder": "কোমপানির নাম"
+          },
+          "firstName": {
+            "label": "নামের প্রথম অংশ:",
+            "placeholder": "নামের প্রথম অংশ:"
+          },
+          "lastName": {
+            "label": "নামের শেষ অংশ:",
+            "placeholder": "নামের শেষ অংশ:"
+          },
+          "address": {
+            "label": "ব্যবসায়িক ঠিকানা:"
+          },
+          "mobile": {
+            "label": "মোবাইল:",
+            "placeholder": "মোবাইল নাম্বার"
+          },
+          "phone": {
+            "label": "ফোন:",
+            "placeholder": "ফোন নাম্বার"
+          },
+          "primaryEmail": {
+            "label": "প্রাইমারি ইমেইল:",
+            "placeholder": "ইমেইল"
+          },
+          "secondaryEmail": {
+            "label": "সেকেন্ডারি ইমেইল:",
+            "placeholder": "সেকেন্ডারি ইমেইল"
+          }
+        }
+      }
+    },
+    "password": {
+      "email": {
+        "panel": {
+          "title": "পাসওয়ার্ড ভুলে গেছেন?",
+          "description": "USHA অ্যাকাউন্টের সাথে সম্পর্কিত ইমেল এড্রেস সরবরাহ করুন, আমরা আপনার ইমেল অ্যাকাউন্টে পাসওয়ার্ড পুনরায় সেট করার নির্দেশাবলী প্রেরণ করব।",
+          "form": {
+            "label": "ইমেইল এড্রেস",
+            "placeholder": "ইমেইল এড্রেস",
+            "sendButton": "আমাকে নির্দেশ পাঠান"
+          }
+        }
+      },
+      "reset": {
+        "panel": {
+          "heading": "পুনরায় পাসওয়ার্ড সেট",
+          "form": {
+            "email": {
+              "label": "ইমেইল এড্রেস",
+              "placeholder": "ইমেইল"
+            },
+            "password": {
+              "label": "পাসওয়ার্ড",
+              "placeholder": "পাসওয়ার্ড"
+            },
+            "confirm": {
+              "label": "নিশ্চিত পাসওয়ার্ড করুন"
+            },
+            "resetButton": "পুনরায় পাসওয়ার্ড সেট"
+          }
+        }
+      }
+    },
+    "login": {
+      "panel": {
+        "title": "স্বাগতম",
+        "description": "আপনার ব্যবসাকে আরও সহজ করে তুলুন।"
+      },
+      "form": {
+        "placeholders": {
+          "email": "ইমেইল এড্রেস",
+          "password": "পাসওয়ার্ড"
+        },
+        "checkbox": {
+          "label": "আমাকে মনে কর"
+        },
+        "loginButton": "লগিন",
+        "links": {
+          "forgotPassword": "পাসওয়ার্ড ভুলে গেছেন?"
+        }
+      }
+    },
+    "register": {
+      "panel": {
+        "title": "Welcome",
+        "description": "Building AI Agent has never been so easy, whether you have 99 or 99999 products, build you Agent in just 5 minutes, of course without coding.",
+        "form": {
+          "placeholders": {
+            "company": "Company Name",
+            "firstName": "First Name",
+            "lastName": "Last Name",
+            "email": "Email Address",
+            "userName": "User Name",
+            "phone": "Phone",
+            "address": "Office Address",
+            "password": "Password",
+            "confirmPassword": "Confirm Password"
+          },
+          "signupButton": "Sign Up"
+        },
+        "loginOption": {
+          "singTitle": "Already have an account?",
+          "tooltip": "Go to Login",
+          "loginButton": "Login"
+        }
+      }
+    },
+    "emailVerify": {
+      "email": {
+        "title": "USHA Email Verification",
+        "body": {
+          "heading": "Click The Following Link To Verify Your Email",
+          "link": "Verify"
+        }
+      },
+      "confirm": {
+        "panel": {
+          "title": "Registration Confirmed",
+          "paragraphDescription": "Lets start our business",
+          "paragraph": "Your Email is successfully verified. Click here to",
+          "link": "Login"
+        }
+      },
+      "verification": {
+        "panel": {
+          "title": "Registration",
+          "paragraph": "You have successfully registered. An email is sent to you for verification.",
+          "paragraphSmall": "If you haven't received a verification email yet, please try resending your verification email.",
+          "form": {
+            "resendButton": "Resend"
+          }
+        }
+      }
+    },
+    "errors": {
+      "403": {
+        "title": "404 Permission Denied",
+        "body": {
+          "heading": "Permission Not Granted"
+        }
+      }
+    },
+    "manage": {
+      "title": "Coming really Soon !",
+      "paragraph": "We are currently building facebook and faq manager, stay with us while we complete it!"
+    },
+    "csvUpload": {
+      "panel": {
+        "heading": "Upload CSV ",
+        "body": {
+          "heading": "Upload your csv",
+          "uploadButton": "Upload"
+        }
+      }
+    },
+    "changePlan": {
+      "price": {
+        "month": "month"
+      },
+      "buttons": {
+        "currentPlan": "Current Plan",
+        "selectPlan": "Select Plan",
+        "cancel": "Cancel"
+      },
+      "freePlan" : {
+        "planName": "Free",
+        "planDetails": {
+          "dashboard":"Dashboard",
+          "member": "1 member account",
+          "chatbot": "1 chatbot",
+          "userDays": "50 user days"
+        }
+      },
+      "minimalPlan" : {
+        "planName": "Minimal",
+        "planDetails": {
+          "dashboard":"Dashboard",
+          "member": "1 member account",
+          "chatbot": "1 chatbot",
+          "userDays": "300 user days"
+        }
+      },
+      "normalPlan" : {
+        "planName": "Normal",
+        "planDetails": {
+          "dashboard":"Dashboard",
+          "member": "1 member account",
+          "chatbot": "1 chatbot",
+          "userDays": "1000 user days"
+        }
+      },
+      "largePlan" : {
+        "planName": "Large",
+        "planDetails": {
+          "dashboard":"Dashboard",
+          "member": "1 member account",
+          "chatbot": "1 chatbot",
+          "userDays": "3000 user days"
+        }
+      },
+      "enterprisePlan" : {
+        "planName": "Enterprise",
+        "planDetails": {
+          "dashboard":"Dashboard",
+          "member": "1 member account",
+          "chatbot": "1 chatbot",
+          "userDays": "3000 user days",
+          "extra": "500 user days"
+        }
+      },
+      "nextPlan" : {
+        "changePlanNotification" : "Your plan will change to",
+        "date" : {
+          "from" : "from",
+          "in" : "in",
+          "days": "days"
+        }
+      }
+    }
+  }
+}

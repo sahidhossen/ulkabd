@@ -1,0 +1,117 @@
+
+$container-width : 980px;
+
+// Brands
+$brand-primary: #6f7ffc;
+$brand-secondary:#1BB39A;
+$brand-info: #8eb4cb;
+$brand-success: #2ab27b;
+$brand-warning: #E4A300;
+$brand-danger: #bf5329;
+
+$brand-tertiary: #ff5353;
+$brand-yellow: #FFD200;
+
+$color-new_order : #6f7ffc;
+$color-confirmed_order : #ABC059;
+$color-sent_order: #FFD200;
+$color-delivery_order: #1BB39A;
+$color-cancelled_order: #EE7770;
+$color-default_order: #E4E9ED;
+
+
+$facebook-background:#3F51B5;
+// Body
+$body-bg: #F4F4F5;
+$login-template-body-bg: $brand-primary;
+// Borders
+//$laravel-border-color: darken($body-bg, 10%);
+$laravel-border-color: #d9dfe9;
+$list-group-border: $laravel-border-color;
+$navbar-default-border: $laravel-border-color;
+$panel-default-border: $laravel-border-color;
+$panel-inner-border: $laravel-border-color;
+
+// Typography
+$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
+$font-family-sans-serif: "Open Sans", sans-serif;
+$font-size-base: 14px;
+$line-height-base: 1.6;
+$text-color: #262831;
+$stat-widget-text-color: #FFFFFF;
+$header-text-color: $brand-primary;
+$font-size-small: 14px;
+$font-size-big: 40px;
+$font-size-medium: 20px;
+
+// Link
+$link-color: $brand-primary;
+
+// Navbar
+$navbar-bg: #FFFFFF;
+$navbar-text:#222222;
+$navbar-hover-bg:#ffffff;
+$navbar-hover-text:#222222;
+
+$navbar-default-bg: #FFFFFF;
+$navbar-default-link-color: #222222;
+$navbar-default-link-hover-color: #444444;
+$navbar-height: 65px;
+
+//Sidebar
+$sidebar-bg: #368DA0;
+$sidebar-text-color:#ffffff;
+$sidebar-hover-bg:#ffffff;
+$sidebar-link-bg-hover-color:#ffffff;
+$sidebar-link-bg-text-hover-color: $sidebar-bg;
+$sidebar-link-font-size:14px;
+$sidebar-link-font-size-active:13px;
+
+
+
+// Buttons
+$btn-default-color: $text-color;
+$btn-default-hover-text-color: #fff;
+$btn-default-hover-bg-color: $brand-primary;
+$btn-primary-color: #fff;
+$btn-primary-bg: $brand-primary;
+$btn-primary-border: #fff;
+
+
+
+// Inputs
+//input-border: lighten($text-color, 40%);
+$input-border: $laravel-border-color;
+$input-border-focus: lighten($brand-primary, 25%);
+$input-color-placeholder: lighten($text-color, 30%);
+
+// Panels
+$panel-default-heading-bg: #fff;
+
+//admin
+$admin-color: #f9f9f9;
+$light-color : #ffffff;
+$brand-dark: #368DA0;
+
+// padding and margin
+$base-padding:15px;
+$base-margin:15px;
+
+// table
+$table-caption-color: $brand-primary;
+$table-data-max-width: 200px;
+$table-border: #DDD;
+
+// bag and label margin
+
+$sidebar-label-margin: 1px 0 0;
+$sidebar-label-font-size: 95%;
+
+//schedule broadcast
+$schedule-bg: #6F7FFC;
+$btn-broadcast-color: $light-color;
+$btn-broadcast-bg: $schedule-bg;
+$broadcast-color: $light-color;
+
+$broadcast-img-border-radius: 0;
+$navbar-static-top: #6f7ffc;

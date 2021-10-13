@@ -1,0 +1,240 @@
+/*
+Elements
+ */
+@import "variables";
+@import "elements";
+@import "mixins";
+
+.all_bots {
+  position: relative;
+    .bot {
+      margin-bottom: 25px;
+      min-height:400px;
+      max-height:400px;
+      transition-duration: .5s;
+      -moz-transition-duration: .5s;
+      .body-main{
+        .bot-header {
+          position: relative;
+          min-height: 100px;
+            .bot-logo {
+              margin-left:0;
+              text-align: center;
+              width:100%;
+                img {
+                  margin:0 auto;
+                }
+            }
+          h3 {
+            padding-top: 0px;
+            margin-top: 10px;
+          }
+            .bot-setting, .bot-cancel {
+              position: absolute;
+              right: 20px;
+              color: #ffffff;
+              top: 20px;
+              display: inline-block;
+              cursor: pointer;
+                &.onSettingMode {
+                  -webkit-animation:spin 4s linear infinite;
+                  -moz-animation:spin 4s linear infinite;
+                  animation:spin 4s linear infinite;
+                }
+                i {
+                  font-size:18px;
+                }
+            }
+
+          .bot-title {
+            position: relative;
+            padding-left:10px;
+            margin-top:27px;
+            padding-right:10px;
+            .bot_title_field {
+              //position: absolute;
+              width:100%;
+              text-align: center;
+              input {
+                color: $light-color;
+                width:100%;
+                -webkit-box-shadow: none;
+                -moz-box-shadow: none;
+                box-shadow: none;
+                border:1px solid rgba(255,255,255,0.2);
+                background: transparent;
+                padding:6px 5px;
+                text-align: center;
+                font-size:1.3em;
+                  &.has-error {
+                    border-color: $brand-danger;
+                  }
+                }
+
+              input::placeholder {
+                color:white
+              }
+              }
+            }
+          }
+        }
+        .bot-body {
+          padding-left:0;
+          padding-right:0;
+          width:90%;
+          margin:0 auto;
+          position: relative;
+            ul {
+              margin:0;
+              padding:0;
+              list-style: none;
+                li {
+                  display: inline-block;
+                  vertical-align: middle;
+                  padding:10px 0;
+                  width:100%;
+                  border-bottom:1px solid #EEEEEE;
+                  position: relative;
+                    .badge {
+                      position: absolute;
+                      right:0;
+                      top:10px;
+                    }
+                    span{
+                      &:first-child {
+
+                      }
+                    }
+                  .form-control {
+                    &.has-error {
+                      border-color: $brand-danger;
+                    }
+                  }
+                }
+
+            }
+
+
+        }
+        .bot-footer {
+          background: $brand-primary;
+            a {
+              display: block;
+              text-align: center;
+              color: $light-color;
+              font-size: 1.3em;
+              padding:10px 0;
+                &:hover {
+                  text-decoration: none;
+                }
+            }
+            input[type='submit'] {
+              background: transparent;
+              border:none;
+              width:100%;
+              text-align: center;
+              color: $light-color;
+              padding:10px 0;
+              font-size: 1.3em;
+                &.disabled {
+                  background: rgba(255, 255, 255, 0.2);
+                }
+            }
+        }
+        .field-set {
+          display: none;
+          ul {
+            border-top: 1px solid #EEEEEE;
+            padding-top: 5px;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            li {
+              border-bottom: 0px;
+            }
+          }
+          .bot-border-buttom {
+            border-bottom: 1px solid #EEEEEE;
+          }
+          .margin-buttom-10 {
+            margin-bottom: 10px;
+          }
+        }
+        &.enable-edit-mode {
+          position: absolute;
+          width:92%;
+          z-index:9999;
+          box-shadow: 0 1px 12px rgba(0, 0, 0, 0.5);
+          .field-set {
+            display: block;
+            -webkit-transition: all 0.3s linear 0s;
+            -moz-transition: all 0.3s linear 0s;
+            -ms-transition: all 0.3s linear 0s;
+            -o-transition: all 0.3s linear 0s;
+            transition: all 0.3s linear 0s;
+          }
+        }
+    }
+      &.pending {
+        .bot-header {
+          background: $brand-primary;
+        }
+        .bot-footer {
+          background: $brand-primary;
+        }
+      }
+      &.warning {
+        .bot-header {
+          background: $brand-danger;
+        }
+        .bot-footer {
+          background: $brand-danger;
+        }
+      }
+      &.born {
+
+        .bot-header {
+          background: $brand-primary;
+        }
+        .bot-footer {
+          background: $brand-primary;
+        }
+      }
+  .NewBot {
+    .body-main {
+      .bot-header {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        .bot-title {
+          margin-top: 4px;
+        }
+      }
+    }
+  }
+}
+
+.agentImageUpload {
+  height: 76px;
+  width: 76px;
+  margin: 0 auto;
+  border: 1px dashed rgba(255,255,255,0.7);
+  border-radius: 50%;
+  padding: 2px 2px;
+}
+
+.example-enter {
+  opacity: 0.01;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.example-leave {
+  opacity: 1;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}

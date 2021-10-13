@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow:
+Host: usha.ulkabd.com
+Sitemap: https://usha.ulkabd.com/sitemap.xml

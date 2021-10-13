@@ -1,0 +1,56 @@
+@media (max-width: 768px) {
+  .authentication {
+    .panel-bg {
+      width: 100%;
+      .panel-body {
+        padding:5px;
+      }
+    }
+    .form-control {
+      font-size:100%;
+      font-weight:300;
+    }
+    .radio label, .checkbox label {
+      font-size:100%;
+      font-weight:300;
+    }
+  }
+  .help-block {
+    margin-top:0;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .authentication {
+    .panel-bg {
+      width:100%;
+    }
+    .left-panel {
+      display: block;
+      width:100%;
+      .top-image {
+        padding:20px 0;
+      }
+      .bottom-image {
+        display: none;
+      }
+    }
+    .right-panel {
+      display: block;
+      width:100%;
+      .login-title {
+        font-size: 30px;
+        padding-top: 10px;
+        font-weight: 300;
+      }
+      .login-description {
+        font-weight:300;
+      }
+    }
+    .form-control {
+      font-size:100%;
+      font-weight:300;
+    }
+  }
+}

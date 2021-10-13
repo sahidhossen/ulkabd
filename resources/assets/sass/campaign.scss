@@ -1,0 +1,266 @@
+@import "variables";
+@import "elements";
+
+.campaign-container {
+  .campaign-header {
+    .title {
+      margin:0;
+    }
+    .btn-create_new {
+      margin-left: 20px;
+      position: relative;
+      .schedule_type_list {
+        position: absolute;
+        width: 150px;
+        height: auto;
+        background: #ffffff;
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+        border:1px solid rgba(0, 0, 0, .15);
+        z-index: 99;
+        left: -84px;
+        margin: 0;
+        padding: 0;
+        -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .3);
+        -moz-box-shadow: 0 3px 8px rgba(0, 0, 0, .3);
+        box-shadow: 0 3px 8px rgba(0, 0, 0, .3);
+        li {
+          display: block;
+          position: relative;
+          color: #222222;
+          padding: 10px 8px;
+          font-size: 14px;
+          border-bottom:1px solid #efefef;
+          cursor: pointer;
+          &:hover {
+            text-decoration: none;
+            background: $admin-color;
+          }
+          &:last-child {
+            border-bottom:none;
+          }
+          &.disabled {
+            color: #d1d1d1;
+            cursor: not-allowed;
+          }
+        }
+      }
+    }
+  }
+  .campaign-body {
+    padding-top:10px;
+    .campaign-list {
+      background: $admin-color;
+      position: relative;
+      padding: 10px;
+      .list {
+        position: relative;
+        background: #ffffff;
+        color: #444444;
+        padding:5px;
+        align-items: center;
+        -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+        -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+        box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+        margin-bottom:15px;
+        -webkit-transition: all ease 0.2s 0s;
+        -moz-transition: all ease 0.2s 0s;
+        -ms-transition: all ease 0.2s 0s;
+        -o-transition: all ease 0.2s 0s;
+        transition: all ease 0.2s 0s;
+        display: flex;
+        &:last-child {
+          margin-bottom:0;
+        }
+        .sch-item {
+          vertical-align: top;
+          margin-right: 1.5em;
+          padding-left: 10px;
+          padding-right: 10px;
+          position: relative;
+          height: auto;
+          //border-right:1px solid #dfdfdf;
+          &.icon {
+            width:6%;
+            vertical-align: middle;
+            font-size: 2.3em;
+            text-align: center;
+            margin-right:0;
+          }
+          &.details {
+            width: 50%;
+          }
+          &.time {
+            width:15%;
+            text-align: center;
+          }
+          &.people_reach  {
+            width:15%;
+            text-align: center;
+          }
+          &.date {
+            width:8%;
+            color: $brand-tertiary;
+            font-weight:300;
+            span {
+              //position: absolute;
+              font-size: 2.5em;
+              //right: 2px;
+              //top:0;
+              sub {
+                font-size: 40%;
+                bottom: 15px;
+                position: absolute;
+              }
+            }
+          }
+          &:last-child {
+            padding-right:0;
+            border-right:none;
+
+          }
+
+          .title {
+            font-size:15px;
+            font-weight:300;
+            margin:0;
+            padding-bottom:5px;
+          }
+          p {
+            font-size:15px;
+            color: #666666;
+            margin:0;
+          }
+        }
+        &:hover {
+          background: rgba(255, 255, 255, 0.23);
+        }
+        &.has_error {
+          border: 1px solid $brand-tertiary;
+        }
+      }
+    }
+  }
+}
+
+.popup_shadow {
+  background: rgba(0,0,0,0.2);
+  position: fixed;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: none;
+}
+.u-popup-shadow {
+  &.scheduleModal {
+    .main-modal {
+      width:500px;
+    }
+  }
+}
+
+.new_schedule_container {
+  background: #ffffff;
+  width:900px;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  border-radius:5px;
+  margin: 12% 25% auto;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  .schedule_header {
+    border-bottom:1px solid #dfdfdf;
+    .title {
+      margin:0;
+      padding:12px 10px;
+    }
+  }
+  .schedule_body {
+    min-height:300px;
+    padding:10px;
+  }
+  .schedule_footer {
+    padding:8px 5px;
+    border-top:1px solid #dfdfdf;
+    p {
+      margin:0;
+    }
+  }
+
+  .start_date {
+    position: relative;
+    max-width:300px;
+    border:1px solid #efefef;
+    vertical-align: middle;
+
+    font-weight:300;
+    .s_today {
+      width:25%;
+      border-right:1px solid #efefef;
+      display: inline-block;
+      text-align: center;
+      font-size:14px;
+      -webkit-transition: all 0.2s linear 0s;
+      -moz-transition: all 0.2s linear 0s;
+      -ms-transition: all 0.2s linear 0s;
+      -o-transition: all 0.2s linear 0s;
+      transition: all 0.2s linear 0s;
+      padding:5px 0;
+      cursor: pointer;
+      &:hover {
+        background: $admin-color;
+      }
+    }
+    .s_start_calender {
+      display: inline-block;
+      width:75%;
+      text-align: center;
+      font-size:14px;
+      -webkit-transition: all 0.2s linear 0s;
+      -moz-transition: all 0.2s linear 0s;
+      -ms-transition: all 0.2s linear 0s;
+      -o-transition: all 0.2s linear 0s;
+      transition: all 0.2s linear 0s;
+      padding:5px 0;
+      cursor: pointer;
+      &:hover {
+        background: $admin-color;
+      }
+    }
+    .s_calender_view {
+      position: absolute;
+      width:100%;
+      height:auto;
+    }
+  }
+}
+
+
+/*
+Text Popup Body
+ */
+.text-popup-body {
+  padding-left:15px;
+  padding-right:15px;
+    form {
+      .form-group {
+        .form-control {
+          border-color: #f1f1f1;
+        }
+        textarea {
+          &.form-control {
+            min-height:120px;
+          }
+        }
+        &.has-error {
+          .form-control {
+            border-color: $brand-tertiary;
+          }
+        }
+      }
+    }
+}

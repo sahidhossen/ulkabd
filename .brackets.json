@@ -1,0 +1,15 @@
+{
+    "sass.enabled": false,
+    "path": {
+        "resources/assets/sass/app.scss": {
+            "sass.enabled": true,
+            "sass.options": {
+                "outputDir": "../../../public/css/",
+                "includePaths": [],
+                "sourceComments": false,
+                "outputStyle": "nested"
+            },
+            "linting.collapsed": false
+        }
+    }
+}
